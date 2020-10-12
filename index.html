@@ -146,9 +146,29 @@
         </div>
     </section>
 		
+		
+		
 	<!-- ABOUT -->
     <section id="about" style="background: #f9f9f9">
         <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <h2>About us</h2>
+			<p>Flexible Pest Services is an independently owned and operated family pest control business headquartered in Navi Mumbai. We are committed to providing the highest quality pest control services in our area while also providing the kind of respectful treatment and customer services that lead to long term relationships with our clients.</p>
+		  </div>
+		</div>
+			<div class="row">
+			  <div class="col-md-6">
+			    <h2>Vision</h2><br/>
+			    <p>Creating easy to purchase, easy to arrange, environmentally sustainable, holistic pest solutions.</p>
+			  </div>
+			  <div class="col-md-6">
+			    <h2>Mission</h2><br/>
+			    To protect, defend and enhance the value of every client’s image and reputation by providing the most pro-active and comprehensive pest control service while exceeding their expectations every step of the way.
+			  </div>
+			</div>
+			<hr/>
+			
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="about-info">
@@ -574,7 +594,7 @@
 
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title">
-                        <h2>Team <small>Meet Professional Worker</small></h2>
+                        <h2>Team <small>Meet Professional technician</small></h2>
                     </div>
                 </div>
 
@@ -638,7 +658,6 @@
     <!-- <section id="contact"> -->
         <!-- <div class="container"> -->
             <!-- <div class="row"> -->
-
                 <!-- <div class="col-md-6 col-sm-12"> -->
                     <!-- @using (Html.BeginForm("SendMail", "Home", FormMethod.Post, new { @id = "contact-form" })) -->
                     <!-- { -->
@@ -653,28 +672,23 @@
 
                             <!-- <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea> -->
                         <!-- </div> -->
-
                         <!-- <div class="col-md-4 col-sm-12"> -->
                             <!-- <input type="submit" class="form-control" name="send message" value="Send Message"> -->
                         <!-- </div> -->
                     <!-- } -->
-
                 <!-- </div> -->
-
                 <!-- <div class="col-md-6 col-sm-12"> -->
                     <!-- <div class="contact-image"> -->
                         <!-- <img src="~/images/ps1.png" class="img-responsive" alt="Pest Control Service"> -->
                     <!-- </div> -->
                 <!-- </div> -->
-
             <!-- </div> -->
         <!-- </div> -->
     <!-- </section> -->
-
-
     <!-- FOOTER -->
+	
     <footer id="footer">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
 
                 <div class="col-md-4 col-sm-6">
@@ -685,18 +699,9 @@
                         <address>
                             <p>SS3-402,<br>Sec-18, Koper-khairane Navi Mumbai 400709</p>
                         </address>
-
-                        <ul class="social-icon">
-                            <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                        </ul>
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2020 Success Pest Solution</p>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <div class="footer-info">
                         <div class="section-title">
                             <h2>Contact Info</h2>
@@ -707,12 +712,34 @@
                         </address>
                     </div>
                 </div>
+				
+				<div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Follow us</h2>
+                        </div>
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/Successpestsolution.2019" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+				
+				<div class="col-md-12">
+				<br/>
+				<center><div class="copyright-text">
+                            <p>Copyright &copy; 2020 Success Pest Solution</p>
+                        </div></center>
+				<div>
+				
             </div>
-			<div id="googleMap" style="width:100%;height:400px;">
+			<!-- <div id="googleMap" style="width:100%;height:400px;"> -->
 			
-			</div>
+			<!-- </div> -->
         </div>
     </footer>
+	
     <!-- SCRIPTS -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -720,7 +747,7 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/HomePage.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaSEo5prsyZFaavNJUCnm-SlfpmDSuluQ&callback=initMap"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaSEo5prsyZFaavNJUCnm-SlfpmDSuluQ&callback=initMap"></script> -->
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -733,20 +760,20 @@
             $("#DescRat").hide();
             $("#DescCovid").hide();
 			//myMap();
-			initMap();
+			//initMap();
         });
 
-function initMap() { 
-        var uluru = {lat: 19.102943, lng: 73.002424}; 
-        var map = new google.maps.Map(document.getElementById('googleMap'), { 
-          zoom: 5, 
-          center: uluru 
-        }); 
-        var marker = new google.maps.Marker({ 
-          position: uluru, 
-          map: map 
-        }); 
-      } 
+<!-- function initMap() {  -->
+        <!-- var uluru = {lat: 19.102943, lng: 73.002424};  -->
+        <!-- var map = new google.maps.Map(document.getElementById('googleMap'), {  -->
+          <!-- zoom: 5,  -->
+          <!-- center: uluru  -->
+        <!-- });  -->
+        <!-- var marker = new google.maps.Marker({  -->
+          <!-- position: uluru,  -->
+          <!-- map: map  -->
+        <!-- });  -->
+      <!-- }  -->
 
 		
 		<!-- function myMap() { -->
