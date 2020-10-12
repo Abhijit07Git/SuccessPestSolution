@@ -162,10 +162,10 @@ https://templatemo.com/tm-516-known
     padding: 50px 0;
   }
 
-  #team,
-  #testimonial {
-    background: #f9f9f9;
-  }
+  /* #team, */
+  /* #testimonial { */
+    /* background: #f9f9f9; */
+  /* } */
 
   #team, 
   #testimonial {
@@ -708,9 +708,9 @@ https://templatemo.com/tm-516-known
       CONTACT             
   -----------------------------------------*/
 
-  #contact {
-    background: #29ca8e;
-  }
+  /* #contact { */
+    /* background: #29ca8e; */
+  /* } */
 
   #contact h2 {
     color: #ffffff;
@@ -791,7 +791,7 @@ https://templatemo.com/tm-516-known
   }
 
   footer .social-icon {
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   .footer-info {
